@@ -110,3 +110,9 @@ _start:
     movl ST_FILE_DESCRIPTOR(%ebp), %ebx
     int $LINUX_SYSCALL
 
+    # exit the program
+    movl $SYS_EXIT, %eax
+    movl $0, %ebx
+    int $LINUX_SYSCALL
+
+

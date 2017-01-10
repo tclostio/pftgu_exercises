@@ -2,7 +2,7 @@
 .include "linux.s"
 .include "record-def.s"
 
-###DATA SECTION###
+##DATA SECTION###
 .section .data
 
 input_file_name:
